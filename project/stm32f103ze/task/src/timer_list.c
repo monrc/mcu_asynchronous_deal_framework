@@ -38,10 +38,10 @@ static void timer_list_add(Timer_node_t *pNode, uint8_t byMemIndex);
 /*********************************************************/
 //name: timer_task_init
 //function: 定时器任务链表初始化
-//input:
-//output:
-//return:
-//note:
+//input: None
+//output: None
+//return: None
+//note: None
 /*********************************************************/
 void timer_list_init(void)
 {
@@ -59,9 +59,9 @@ void timer_list_init(void)
 /*********************************************************/
 //name: timer_list_pop
 //function: 软件定时器链表扫描函数，在定时器中断函数中调用
-//input:
-//output:
-//return:
+//input: None
+//output: None
+//return: None
 //note: 由于在中断中执行，定时器任务函数规模应尽可能简短
 /*********************************************************/
 void timer_list_pop(void)
@@ -126,9 +126,10 @@ void timer_list_pop(void)
 /*********************************************************/
 //name: timer_list_add
 //function: 将软件定时器添加至链表当中
-//input:
-//output:
-//return:
+//input: Timer_node_t *pNode	定时器属性指针
+//		 uint8_t byMemIndex		在内存中的位置
+//output: None
+//return: None
 //note: 若两个定时器任务在将来的某个时刻，同时到时间，则先添加的任务，优先执行
 /*********************************************************/
 static void timer_list_add(Timer_node_t *pNode, uint8_t byMemIndex)
@@ -299,10 +300,10 @@ bool timer_list_empty(void)
 /*********************************************************/
 //name: timer_list_print
 //function: 打印定时器链表
-//input:
-//output:
-//return:
-//note:
+//input: None
+//output: None
+//return: None
+//note: None
 /*********************************************************/
 void timer_list_print(void)
 {

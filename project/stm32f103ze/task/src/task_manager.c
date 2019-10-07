@@ -53,10 +53,10 @@ static void manager_queue_init(void)
 /*********************************************************/
 //name: manager_enque_isr
 //function: 任务入队列，在中断中使用
-//input:
-//output:
-//return: 
-//note:
+//input: Queue_element_t *pTask		任务信息指针
+//output: None
+//return: true  入队列成功   false入队列失败
+//note: 该函数设计为在中断中执行的函数
 /*********************************************************/
 bool manager_enque_isr(Queue_element_t *pTask)
 {
@@ -81,7 +81,7 @@ bool manager_enque_isr(Queue_element_t *pTask)
 //input: None
 //output: Queue_element_t *pTask 队列任务指针
 //return: true 出队成功   false 出队失败
-//note: 
+//note: None
 /*********************************************************/
 static bool manager_deque(Queue_element_t *pTask)
 {

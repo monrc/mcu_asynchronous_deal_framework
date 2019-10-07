@@ -155,10 +155,10 @@ static bool task_list_add(Task_node_t *pTask)
 /*********************************************************/
 //name: task_list_push
 //function: 把任务添加至任务链表  若任务已经存在，则忽略此次任务添加
-//input:
-//output:
+//input: Task_node_t *pTask 任务信息指针
+//output: None
 //return: true 添加成功 	false 添加失败
-//note:
+//note: None
 /*********************************************************/
 bool task_list_push(Task_node_t *pTask)
 {
@@ -188,7 +188,7 @@ bool task_list_push(Task_node_t *pTask)
 //input: uint8_t byDeletID 任务ID号
 //output: None
 //return: None
-//note: 
+//note: None
 /*********************************************************/
 void task_list_delete(uint8_t byDeletID)
 {
@@ -231,10 +231,10 @@ void task_list_delete(uint8_t byDeletID)
 /*********************************************************/
 //name: task_list_print
 //function: 打印任务链表
-//input:
-//output:
-//return:
-//note:
+//input: None
+//output: None
+//return: None
+//note: None
 /*********************************************************/
 void task_list_print(void)
 {
