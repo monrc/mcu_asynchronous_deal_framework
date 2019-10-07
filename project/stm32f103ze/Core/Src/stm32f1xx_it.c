@@ -110,15 +110,18 @@ void SysTick_Handler(void)
 /* For the available peripheral interrupt handler names,                      */
 /* please refer to the startup file (startup_stm32f1xx.s).                    */
 /******************************************************************************/
-
+extern void uart1_irq_callback(void);
+extern void uart2_irq_callback(void);
 /**
   * @brief This function handles USART1 global interrupt.
   */
 void USART1_IRQHandler(void)
 {
-
-	HAL_UART_IRQHandler(&huart1);
-
+	uint8_t res;
+	//HAL_UART_IRQHandler(&huart1);
+	//res = USART1->DR & (uint16_t)0x01FF;
+	uart1_irq_callback();
+	
 }
 
 /**
@@ -127,7 +130,7 @@ void USART1_IRQHandler(void)
 void USART2_IRQHandler(void)
 {
 	uint8_t res;
-	HAL_UART_IRQHandler(&huart2);
+	//HAL_UART_IRQHandler(&huart2);
 	res = USART2->DR & (uint16_t)0x01FF;
 }
 

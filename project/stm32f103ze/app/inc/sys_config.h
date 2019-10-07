@@ -1,8 +1,8 @@
 #ifndef SYS_CONFIG_H
 #define SYS_CONFIG_H
 
-#define USE_ARM_COMPILER_6					1
-#define USE_PRIORITY_INCREASE_WITH_TIME		1
+
+#define USE_PRIORITY_INCREASE_WITH_TIME		0
 
 
 

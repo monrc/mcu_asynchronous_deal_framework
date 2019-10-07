@@ -504,14 +504,14 @@
               <FilePath>..\intermediate\src\intermediate_led.c</FilePath>
             </File>
             <File>
-              <FileName>intermediate_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\intermediate\src\intermediate_uart.c</FilePath>
-            </File>
-            <File>
               <FileName>intermediate_time.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\intermediate\src\intermediate_time.c</FilePath>
+            </File>
+            <File>
+              <FileName>intermediate_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\intermediate\src\intermediate_uart.c</FilePath>
             </File>
             <File>
               <FileName>intermediate_layer.c</FileName>
@@ -562,6 +562,11 @@
               <FileName>timer_list.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\task\src\timer_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>terminal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\terminal.c</FilePath>
             </File>
             <File>
               <FileName>task_config.h</FileName>

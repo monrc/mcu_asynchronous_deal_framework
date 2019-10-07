@@ -8,15 +8,21 @@
 #define TIMER_MAX_NUM		32
 
 
-#define TIMER_TASK_DEBUG_ON		1
-
+#define TIMER_DEBUG_ON		1
+#define TASK_DEBUG_ON		1
 
 //-------------公用的宏定义----------------//
+//硬件文件包含，提供开关中断的接口
+#include <stm32f103xe.h>
 typedef void (*FUNC)();
+
+#define DISABLE_INT() 	__set_PRIMASK(1)
+#define ENABLE_INT()	__set_PRIMASK(0)
 
 //-----------------------------------------//
 
 //#define TASK_NOASSERT
+
 //#define TASK_NOERROR
 
 

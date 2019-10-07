@@ -52,7 +52,7 @@ void delay_ms(uint32_t time)
 	uint32_t tick = get_tick();
 	while(get_tick() - tick < time)
 	{
-		iwdg_refresh();
+		//iwdg_refresh();
 	}
 }
 	

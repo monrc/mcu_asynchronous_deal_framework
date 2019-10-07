@@ -44,10 +44,10 @@ void led_off_time(void)
 {
 	Timer_node_t node;
 	led_off();
-	node.period = 100;
-	node.call_back = led_off;
-	node.repeat = 0xF0;
-	node.task_id = 1;
+	node.wPeriod = 100;
+	node.CallBack = led_off;
+	node.byRepeat = 0xff;
+	node.byID = 1;
 	timer_list_push(&node);
 }
 
@@ -57,17 +57,34 @@ void led_test(void)
 	
 	led_on();
 	
-	node.call_back = led_on;
-	node.period = 100;
-	node.repeat = 0xF0;
-	node.task_id = 1;
+	node.CallBack = led_on;
+	node.wPeriod = 100;
+	node.byRepeat = 0xff;
+	node.byID = 1;
 	timer_list_push(&node);	
+	timer_list_print();
 	
-	node.call_back = led_off_time;
-	node.period = 50;
-	node.repeat = 1;
-	node.task_id = 1;
+	
+	node.CallBack = led_off_time;
+	node.wPeriod = 50;
+	node.byRepeat = 1;
+	node.byID = 1;
 	timer_list_push(&node);
+	timer_list_print();
+	
+	node.CallBack = led_on;
+	node.wPeriod = 100;
+	node.byRepeat = 0xff;
+	node.byID = 1;
+	timer_list_push(&node);	
+	timer_list_print();
+	
+	node.CallBack = led_off_time;
+	node.wPeriod = 50;
+	node.byRepeat = 1;
+	node.byID = 1;
+	timer_list_push(&node);
+	timer_list_print();
 }
 
 

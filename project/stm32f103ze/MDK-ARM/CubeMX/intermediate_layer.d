@@ -5,7 +5,10 @@ cubemx/intermediate_layer.o: ..\intermediate\src\intermediate_layer.c \
   D:\Program\ Files\ (x86)\MDK\ARM\ARMCLANG\Bin\..\include\string.h \
   ..\intermediate\inc\intermediate_key.h \
   ..\intermediate\inc\intermediate_led.h \
-  ..\intermediate\inc\intermediate_time.h ..\Core\Inc\mcu_init.h \
+  ..\intermediate\inc\intermediate_time.h \
+  ..\intermediate\inc\intermediate_uart.h ..\app\inc\sys_config.h \
+  D:\Program\ Files\ (x86)\MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  ..\Core\Inc\mcu_init.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Core\Inc\stm32f1xx_hal_conf.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h \

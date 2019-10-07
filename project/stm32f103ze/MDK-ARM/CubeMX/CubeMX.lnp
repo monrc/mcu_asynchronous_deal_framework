@@ -20,8 +20,8 @@
 "cubemx\stm32f1xx_hal_flash_ex.o"
 "cubemx\intermediate_key.o"
 "cubemx\intermediate_led.o"
-"cubemx\intermediate_uart.o"
 "cubemx\intermediate_time.o"
+"cubemx\intermediate_uart.o"
 "cubemx\intermediate_layer.o"
 "cubemx\main.o"
 "cubemx\app_layer.o"
@@ -29,6 +29,7 @@
 "cubemx\task_manager.o"
 "cubemx\task_list.o"
 "cubemx\timer_list.o"
+"cubemx\terminal.o"
 --library_type=microlib --strict --scatter "CubeMX\CubeMX.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

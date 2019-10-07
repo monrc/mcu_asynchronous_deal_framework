@@ -7,7 +7,7 @@
 #include "intermediate_key.h"
 #include "intermediate_led.h"
 #include "intermediate_time.h"
-#include "intermediate_time.h"
+#include "intermediate_uart.h"
 
 
 void mcu_init(void);

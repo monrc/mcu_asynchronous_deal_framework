@@ -28,4 +28,5 @@ cubemx/intermediate_led.o: ..\intermediate\src\intermediate_led.c \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
   ..\task\inc\timer_list.h \
   D:\Program\ Files\ (x86)\MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  ..\task\inc\task_config.h ..\app\inc\sys_config.h
+  ..\task\inc\task_config.h ..\app\inc\sys_config.h \
+  ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h

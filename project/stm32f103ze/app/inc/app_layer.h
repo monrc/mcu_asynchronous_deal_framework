@@ -9,9 +9,10 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "task_list.h"
-#include "debug.h"
-#include "timer_list.h"
 
+#include "debug.h"
+#include "task_list.h"
+#include "timer_list.h"
+#include "terminal.h"
 
 #endif

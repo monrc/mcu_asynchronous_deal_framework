@@ -6,4 +6,6 @@ cubemx/intermediate_time.o: ..\intermediate\src\intermediate_time.c \
   D:\Program\ Files\ (x86)\MDK\ARM\ARMCLANG\Bin\..\include\string.h \
   ..\intermediate\inc\intermediate_key.h \
   ..\intermediate\inc\intermediate_led.h \
-  ..\intermediate\inc\intermediate_time.h
+  ..\intermediate\inc\intermediate_time.h \
+  ..\intermediate\inc\intermediate_uart.h ..\app\inc\sys_config.h \
+  D:\Program\ Files\ (x86)\MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h
