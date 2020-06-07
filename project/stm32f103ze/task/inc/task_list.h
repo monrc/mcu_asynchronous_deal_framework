@@ -39,7 +39,7 @@ typedef struct
 {
 	Task_node_t List[TASK_MEMORY_SIZE];	//任务事件表
 	bool bMemFlag[TASK_MAX_SIZE];	//任务事件表内存中空闲标志位
-	bool bIDFlag[TASK_MAX_SIZE];	//唯一任务标志位
+	bool bIDFlag[TASK_MAX_UNIQUE_ID];	//唯一任务标志位
 	uint8_t byMemIndex;				//内存记录符号，若当前的内存空闲，则下一个内存大概率也是空闲
 	uint8_t byNum;					//任务事件表中事件的个数
 	uint8_t byHead;					//任务事件表首元素
@@ -57,7 +57,7 @@ typedef struct
 
 void task_list_init(void);
 bool task_list_pop(void);
-bool task_list_push(Task_node_t *pTask);
+bool task_list_push(Task_node_t *pTask, bool bReplace);
 void task_list_delete(uint8_t byID);
 void task_list_print(void);
 

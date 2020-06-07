@@ -24,14 +24,14 @@ static volatile Task_list_t stTask;
 static bool task_list_add(Task_node_t *pTask);
 static void task_list_priority_increase(void);
 
-/*********************************************************/
-//name: task_list_init
-//function: 任务链表初始化
-//input: None
-//output: None
-//return: None
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: task_list_init
+* Function	: 任务链表初始化
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: None
+*********************************************************/
 void task_list_init(void)
 {
 	memset((uint8_t *)&stTask, 0, sizeof(stTask));
@@ -46,14 +46,14 @@ void task_list_init(void)
 }
 
 #if (1 == USE_PRIORITY_INCREASE_WITH_TIME)
-/*********************************************************/
-//name: task_list_priority_increase
-//function: 任务优先级随时间逐渐增加
-//input: None
-//output: None
-//return: None
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: task_list_priority_increase
+* Function	: 任务优先级随时间逐渐增加
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: None
+*********************************************************/
 static void task_list_priority_increase(void)
 {
 	uint8_t i;
@@ -66,14 +66,14 @@ static void task_list_priority_increase(void)
 }
 #endif
 
-/*********************************************************/
-//name: task_list_pop
-//function: 任务函数出链表，并执行任务函数
-//input: None
-//output: None
-//return: true 函数执行完毕    false 链表为空
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: task_list_pop
+* Function	: 任务函数出链表，并执行任务函数
+* Input		: None
+* Output	: None
+* Return	: true 函数执行完毕    false 链表为空
+* Note		: None
+*********************************************************/
 bool task_list_pop(void)
 {
 	if(stTask.byNum)
@@ -97,14 +97,15 @@ bool task_list_pop(void)
 	return false;
 }
 
-/*********************************************************/
-//name: task_list_add
-//function: 把任务添加至任务链表
-//input: Task_node_t *pTask 任务结构体指针
-//output: None
-//return: true 添加成功		false 添加失败
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: task_list_add
+* Function	: 把任务添加至任务链表
+* Input		: Task_node_t *pTask 任务结构体指针
+			  bool bReplace	冲突如何处理   true 替换， false 忽略添加
+* Output	: None
+* Return	: true 添加成功		false 添加失败
+* Note		: None
+*********************************************************/
 static bool task_list_add(Task_node_t *pTask)
 {
 	uint8_t index = stTask.byMemIndex;
@@ -113,8 +114,8 @@ static bool task_list_add(Task_node_t *pTask)
 	uint8_t byHead = stTask.byHead;
 	uint8_t byNext = stTask.byHead;
 	
-	TASK_ERROR("system pTask memeroy is full", TASK_MAX_SIZE > stTask.byNum, return false);
-	TASK_ERROR("pointer is null", NULL != pTask, return false);
+	ERROR("system pTask memeroy is full", TASK_MAX_SIZE > stTask.byNum, return false);
+	ERROR("pointer is null", NULL != pTask, return false);
 	
 	//查找空闲的内存块
 	while(true == stTask.bMemFlag[index])
@@ -152,17 +153,18 @@ static bool task_list_add(Task_node_t *pTask)
 	return true;
 }
 
-/*********************************************************/
-//name: task_list_push
-//function: 把任务添加至任务链表  若任务已经存在，则忽略此次任务添加
-//input: Task_node_t *pTask 任务信息指针
-//output: None
-//return: true 添加成功 	false 添加失败
-//note: None
-/*********************************************************/
-bool task_list_push(Task_node_t *pTask)
+/*********************************************************
+* Name		: task_list_push
+* Function	: 把任务添加至任务链表 在中断里面添加默认替换
+* Input		: Task_node_t *pTask 任务信息指针
+			  bool bReplace	冲突如何处理   true 替换， false 忽略添加
+* Output	: None
+* Return	: true 添加成功 	false 添加失败
+* Note		: 该函数不建议在中断中调用
+*********************************************************/
+bool task_list_push(Task_node_t *pTask, bool bReplace)
 {
-	TASK_ERROR("pointer is null", NULL != pTask, return false);
+	ERROR("pointer is null", NULL != pTask, return false);
 	
 	if(0 == pTask->byPriority)
 	{
@@ -175,21 +177,29 @@ bool task_list_push(Task_node_t *pTask)
 		if(true == stTask.bIDFlag[pTask->byID])
 		{
 			TASK_PRINT(("task_id:%u already exists\r\n", pTask->byID));
-			return false;
+			
+			if(true == bReplace)
+			{
+				task_list_delete(pTask->byID);
+			}
+			else
+			{
+				return false;
+			}
 		}
 	}
 	
 	return task_list_add(pTask);
 }
 
-/*********************************************************/
-//name: task_list_delete
-//function: 删除所有ID为 byDeletID的任务
-//input: uint8_t byDeletID 任务ID号
-//output: None
-//return: None
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: task_list_delete
+* Function	: 删除所有ID为 byDeletID的任务
+* Input		: uint8_t byDeletID 任务ID号
+* Output	: None
+* Return	: None
+* Note		: None
+*********************************************************/
 void task_list_delete(uint8_t byDeletID)
 {
 	volatile uint8_t *pre = &stTask.byHead;
@@ -228,14 +238,14 @@ void task_list_delete(uint8_t byDeletID)
 }
 //----------------------------任务调试支持--------------------------------------------------
 #if (1 == TASK_DEBUG_ON)
-/*********************************************************/
-//name: task_list_print
-//function: 打印任务链表
-//input: None
-//output: None
-//return: None
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: task_list_print
+* Function	: 打印任务链表
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: None
+*********************************************************/
 void task_list_print(void)
 {
 	uint8_t byNext = stTask.byHead;

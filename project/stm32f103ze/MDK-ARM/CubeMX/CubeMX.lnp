@@ -30,6 +30,7 @@
 "cubemx\task_list.o"
 "cubemx\timer_list.o"
 "cubemx\terminal.o"
+"cubemx\list.o"
 --library_type=microlib --strict --scatter "CubeMX\CubeMX.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

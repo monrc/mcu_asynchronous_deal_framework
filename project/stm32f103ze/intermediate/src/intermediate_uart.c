@@ -52,8 +52,8 @@ void _sys_exit(int return_code)
 
 int sendchar(int ch)
 {
-	while ((USART1->SR & 0X40) == 0); //循环发送,直到发送完毕
-	USART1->DR = (uint8_t) ch;
+	while ((USART2->SR & 0X40) == 0); //循环发送,直到发送完毕
+	USART2->DR = (uint8_t) ch;
 	return ch;
 }
 
@@ -63,16 +63,17 @@ int getkey(void)
 }
 
 
-void uart1_irq_callback(void)
+void uart2_irq_callback(void)
 {
 	uint8_t data;
-	if(READ_BIT(USART1->SR, USART_SR_RXNE) != USART_SR_RXNE)
+	if(READ_BIT(USART2->SR, USART_SR_RXNE) != USART_SR_RXNE)
 		return;
 	
-	data = USART1->DR & 0xff;
+	data = USART2->DR & 0xff;
 	//en_queue(data);
 	terminal_input_predeal(data);
 }
+
 #else
 /*------------------ RealView Compiler -----------------*/
 #pragma import(__use_no_semihosting)             
@@ -118,13 +119,13 @@ void serial1_put_char(uint8_t byData)
 
 
 
-void uart2_irq_callback(void)
+void uart1_irq_callback(void)
 {
 	uint8_t byData;
-	if(READ_BIT(USART2->SR, USART_SR_RXNE) != USART_SR_RXNE)  
+	if(READ_BIT(USART1->SR, USART_SR_RXNE) != USART_SR_RXNE)  
 		return;
 	
-	byData = USART2->DR & 0xff;
+	byData = USART1->DR & 0xff;
 }
 
 

@@ -16,6 +16,7 @@ int main()
 
 	mcu_init();
 	manager_init();
+	terminal_init(serial2_put_char);
 
 	led_control(YELLOW_LED, OFF);
 	led_control(BULUE_LED, OFF);

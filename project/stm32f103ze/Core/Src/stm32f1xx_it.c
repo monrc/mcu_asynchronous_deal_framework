@@ -119,9 +119,7 @@ void USART1_IRQHandler(void)
 {
 	uint8_t res;
 	//HAL_UART_IRQHandler(&huart1);
-	//res = USART1->DR & (uint16_t)0x01FF;
-	uart1_irq_callback();
-	
+	res = USART1->DR & (uint16_t)0x01FF;
 }
 
 /**
@@ -131,7 +129,8 @@ void USART2_IRQHandler(void)
 {
 	uint8_t res;
 	//HAL_UART_IRQHandler(&huart2);
-	res = USART2->DR & (uint16_t)0x01FF;
+	//res = USART2->DR & (uint16_t)0x01FF;
+	uart2_irq_callback();
 }
 
 /**

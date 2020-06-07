@@ -35,14 +35,14 @@ static volatile Timer_list_t stTimer;
 //模块内私有函数声明
 static void timer_list_add(Timer_node_t *pNode, uint8_t byMemIndex);
 
-/*********************************************************/
-//name: timer_task_init
-//function: 定时器任务链表初始化
-//input: None
-//output: None
-//return: None
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: timer_task_init
+* Function	: 定时器任务链表初始化
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: None
+*********************************************************/
 void timer_list_init(void)
 {
 	memset((uint8_t *)&stTimer, 0, sizeof(stTimer));
@@ -56,18 +56,17 @@ void timer_list_init(void)
 	stTimer.byHead = TIMER_GUARTD_INDEX;
 }
 
-/*********************************************************/
-//name: timer_list_pop
-//function: 软件定时器链表扫描函数，在定时器中断函数中调用
-//input: None
-//output: None
-//return: None
-//note: 由于在中断中执行，定时器任务函数规模应尽可能简短
-/*********************************************************/
+/*********************************************************
+* Name		: timer_list_pop
+* Function	: 软件定时器链表扫描函数，在定时器中断函数中调用
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: 由于在中断中执行，定时器任务函数规模应尽可能简短
+*********************************************************/
 void timer_list_pop(void)
 {
 	uint8_t byHead = stTimer.byHead;
-	uint8_t byNext;
 
 	uint8_t byExecNum = 0;
 	uint8_t byExecIndex[TIMER_MAX_SIZE] = {0};
@@ -109,8 +108,7 @@ void timer_list_pop(void)
 			stTimer.bMemFlag[byHead] = false; //清除内存块标记
 		}
 		stTimer.byNum--;
-		byNext = stTimer.List[byHead].byNext;//下一个循环扫描判断
-		byHead = byNext;
+		byHead = stTimer.List[byHead].byNext;//下一个循环扫描判断
 	}
 	stTimer.byHead = byHead;
 
@@ -123,15 +121,15 @@ void timer_list_pop(void)
 	}
 }
 
-/*********************************************************/
-//name: timer_list_add
-//function: 将软件定时器添加至链表当中
-//input: Timer_node_t *pNode	定时器属性指针
-//		 uint8_t byMemIndex		在内存中的位置
-//output: None
-//return: None
-//note: 若两个定时器任务在将来的某个时刻，同时到时间，则先添加的任务，优先执行
-/*********************************************************/
+/*********************************************************
+* Name		: timer_list_add
+* Function	: 将软件定时器添加至链表当中
+* Input		: Timer_node_t *pNode	定时器属性指针
+			  uint8_t byMemIndex		在内存中的位置
+* Output	: None
+* Return	: None
+* Note		: 若两个定时器任务在将来的某个时刻，同时到时间，则先添加的任务，优先执行
+*********************************************************/
 static void timer_list_add(Timer_node_t *pNode, uint8_t byMemIndex)
 {
 	uint8_t index = stTimer.byMemIndex;
@@ -139,7 +137,7 @@ static void timer_list_add(Timer_node_t *pNode, uint8_t byMemIndex)
 	uint8_t byHead = stTimer.byHead;
 	uint8_t byNext = stTimer.byHead;
 
-	TASK_ERROR("timer pTask memeroy is full", (TIMER_MAX_SIZE > stTimer.byNum), return;);
+	ERROR("timer pTask memeroy is full", (TIMER_MAX_SIZE > stTimer.byNum), return;);
 
 	if (stTimer.byNum >=  TIMER_MAX_SIZE)
 		return;
@@ -197,19 +195,19 @@ static void timer_list_add(Timer_node_t *pNode, uint8_t byMemIndex)
 	stTimer.byNum++;
 }
 
-/*********************************************************/
-//name: timer_list_push
-//function: 定时器任务链表添加任务，若任务已经存在，则删除后，再添加
-//input: Timer_node_t *pNode 任务信息指针
-//output: None
-//return: None
-//note:  该函数不能在中断里面调用，如果需要在中断里面添加定时器任务，
-//		 可以通过先把任务添加任务至任务队列中，在后台程序中取队列添加至链表中
-/*********************************************************/
+/*********************************************************
+* Name		: timer_list_push
+* Function	: 定时器任务链表添加任务，若任务已经存在，则删除后，再添加
+* Input		: Timer_node_t *pNode 任务信息指针
+* Output	: None
+* Return	: None
+* Note		: 该函数不能在中断里面调用，如果需要在中断里面添加定时器任务，
+			  可以通过先把任务添加任务至任务队列中，在后台程序中取队列添加至链表中
+*********************************************************/
 void timer_list_push(Timer_node_t *pNode)
 {
 	TASK_ASSERT("pointer is null", NULL != pNode);
-	TASK_ERROR("pointer is null", NULL != pNode, return;);
+	ERROR("pointer is null", NULL != pNode, return;);
 		
 	task_enter_critical(); 	//临界段保护互斥量
 	stTimer.byMutex++;		//与timer_list_pop函数形成互斥访问stTimer资源
@@ -229,15 +227,15 @@ void timer_list_push(Timer_node_t *pNode)
 	stTimer.byMutex--; //允许中断函数执行定时器扫描函数
 }
 
-/*********************************************************/
-//name: timer_list_delete
-//function: 删除所有ID为 byID的定时器任务
-//input: uint8_t byDeletID 定时器任务ID号
-//output: None
-//return: None
-//note: 该函数不建议在中断中调用，原因：保护临界资源（stTimer）
-//		如有需求，添加至任务队列中，再转储至任务链表中，再执行
-/*********************************************************/
+/*********************************************************
+* Name		: timer_list_delete
+* Function	: 删除所有ID为 byID的定时器任务
+* Input		: uint8_t byDeletID 定时器任务ID号
+* Output	: None
+* Return	: None
+* Note		: 该函数不建议在中断中调用，原因：保护临界资源（stTimer）
+			  如有需求，添加至任务队列中，再转储至任务链表中，再执行
+*********************************************************/
 void timer_list_delete(uint8_t byDeletID)
 {
 	volatile uint8_t *pre = &stTimer.byHead;
@@ -281,14 +279,15 @@ void timer_list_delete(uint8_t byDeletID)
 	
 	stTimer.byMutex--; //互斥信号量恢复
 }
-/*********************************************************/
-//name: timer_list_empty
-//function: 查询定时器任务是否为空
-//input: None
-//output: None
-//return: true 链表空		false 链表非空
-//note: None
-/*********************************************************/
+
+/*********************************************************
+* Name		: timer_list_empty
+* Function	: 查询定时器任务是否为空
+* Input		: None
+* Output	: None
+* Return	: true 链表空		false 链表非空
+* Note		: None
+*********************************************************/
 bool timer_list_empty(void)
 {
 	return !stTimer.byNum;
@@ -297,14 +296,14 @@ bool timer_list_empty(void)
 
 //----------------------------定时器任务调试支持--------------------------------------------------
 #if (1 == TIMER_DEBUG_ON)
-/*********************************************************/
-//name: timer_list_print
-//function: 打印定时器链表
-//input: None
-//output: None
-//return: None
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: timer_list_print
+* Function	: 打印定时器链表
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: None
+*********************************************************/
 void timer_list_print(void)
 {
 	uint8_t byNext = stTimer.byHead;

@@ -1,11 +1,12 @@
 #ifndef TASK_CONFIG_H
 #define TASK_CONFIG_H
 
-//#define TASK_PLATFORM_ASSERT
+//#define PLATFORM_ASSERT
 #include "sys_config.h"
 
 #define TASK_MAX_NUM		32
 #define TIMER_MAX_NUM		32
+#define TASK_QUEUE_SIZE		32
 
 
 #define TIMER_DEBUG_ON		1
@@ -21,9 +22,9 @@ typedef void (*FUNC)();
 
 //-----------------------------------------//
 
-//#define TASK_NOASSERT
+//#define NOASSERT
 
-//#define TASK_NOERROR
+//#define NOERROR
 
 
 #endif

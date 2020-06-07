@@ -1,6 +1,6 @@
 Dependencies for Project 'CubeMX', Target 'CubeMX': (DO NOT MODIFY !)
 F (startup_stm32f103xe.s)(0x5D57CDD5)(--cpu Cortex-M3 -g --pd "__MICROLIB SETA 1"-I.\RTE\_CubeMX-I"D:\Program Files (x86)\MDK\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include"-I"D:\Program Files (x86)\MDK\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 527"--pd "STM32F10X_HD SETA 1"--list startup_stm32f103xe.lst--xref -o cubemx\startup_stm32f103xe.o--depend cubemx\startup_stm32f103xe.d)
-F (..\Core\Src\system_stm32f1xx.c)(0x5D57CE44)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/system_stm32f1xx.o -MD)
+F (..\Core\Src\system_stm32f1xx.c)(0x5EA4342D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/system_stm32f1xx.o -MD)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
@@ -83,7 +83,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D2A6ECC)
-F (../Core/Src/stm32f1xx_it.c)(0x5D929BA1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/stm32f1xx_it.o -MD)
+F (../Core/Src/stm32f1xx_it.c)(0x5EAB9CCF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/stm32f1xx_it.o -MD)
 I (..\Core\Inc\mcu_init.h)(0x5D6B8C32)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D2A6ECC)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x5D57CE44)
@@ -521,9 +521,9 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D2A6ECC)
-I (..\task\inc\timer_list.h)(0x5D996802)
+I (..\task\inc\timer_list.h)(0x5DCC23D3)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
-I (..\task\inc\task_config.h)(0x5D9858C0)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 F (..\intermediate\src\intermediate_time.c)(0x5D9499A2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/intermediate_time.o -MD)
 I (..\intermediate\inc\intermediate_time.h)(0x5D6A2A89)
@@ -536,7 +536,7 @@ I (..\intermediate\inc\intermediate_led.h)(0x5D6BAEDB)
 I (..\intermediate\inc\intermediate_uart.h)(0x5D922754)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
-F (..\intermediate\src\intermediate_uart.c)(0x5D97439A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/intermediate_uart.o -MD)
+F (..\intermediate\src\intermediate_uart.c)(0x5EAB99A0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/intermediate_uart.o -MD)
 I (..\intermediate\inc\intermediate_uart.h)(0x5D922754)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
@@ -568,7 +568,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D2A6ECC)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\rt_misc.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (..\task\inc\terminal.h)(0x5D9A93F7)
+I (..\task\inc\terminal.h)(0x5EDC5A07)
 F (..\intermediate\src\intermediate_layer.c)(0x5D7B1574)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/intermediate_layer.o -MD)
 I (..\intermediate\inc\intermediate_layer.h)(0x5D92279A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
@@ -605,15 +605,15 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x5D2A6ECC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D2A6ECC)
-F (..\app\src\main.c)(0x5D9A87EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/main.o -MD)
+F (..\app\src\main.c)(0x5EAB9E74)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/main.o -MD)
 I (..\app\inc\app_layer.h)(0x5D973E48)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
-I (..\task\inc\debug.h)(0x5D95D8C7)
-I (..\task\inc\task_config.h)(0x5D9858C0)
+I (..\task\inc\debug.h)(0x5DC2ED24)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5D2A6ECC)
@@ -621,15 +621,15 @@ I (..\Drivers\CMSIS\Include\cmsis_armcc_V6.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
-I (..\task\inc\task_list.h)(0x5D9961A2)
-I (..\task\inc\timer_list.h)(0x5D996802)
-I (..\task\inc\terminal.h)(0x5D9A93F7)
+I (..\task\inc\task_list.h)(0x5DB99B7A)
+I (..\task\inc\timer_list.h)(0x5DCC23D3)
+I (..\task\inc\terminal.h)(0x5EDC5A07)
 I (..\intermediate\inc\intermediate_layer.h)(0x5D92279A)
 I (..\intermediate\inc\intermediate_key.h)(0x5D58B9F8)
 I (..\intermediate\inc\intermediate_led.h)(0x5D6BAEDB)
 I (..\intermediate\inc\intermediate_time.h)(0x5D6A2A89)
 I (..\intermediate\inc\intermediate_uart.h)(0x5D922754)
-I (..\task\inc\task_manager.h)(0x5D9A0B35)
+I (..\task\inc\task_manager.h)(0x5DB70A8D)
 F (..\app\src\app_layer.c)(0x5D58BA2F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/app_layer.o -MD)
 I (..\app\inc\app_layer.h)(0x5D973E48)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
@@ -637,8 +637,8 @@ I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
-I (..\task\inc\debug.h)(0x5D95D8C7)
-I (..\task\inc\task_config.h)(0x5D9858C0)
+I (..\task\inc\debug.h)(0x5DC2ED24)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5D2A6ECC)
@@ -646,15 +646,15 @@ I (..\Drivers\CMSIS\Include\cmsis_armcc_V6.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
-I (..\task\inc\task_list.h)(0x5D9961A2)
-I (..\task\inc\timer_list.h)(0x5D996802)
-I (..\task\inc\terminal.h)(0x5D9A93F7)
+I (..\task\inc\task_list.h)(0x5DB99B7A)
+I (..\task\inc\timer_list.h)(0x5DCC23D3)
+I (..\task\inc\terminal.h)(0x5EDC5A07)
 F (..\app\inc\sys_config.h)(0x5D9A00EF)()
-F (..\task\src\debug.c)(0x5D9B3ED5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/debug.o -MD)
+F (..\task\src\debug.c)(0x5E89F116)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/debug.o -MD)
 I (..\intermediate\inc\intermediate_time.h)(0x5D6A2A89)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (..\task\inc\debug.h)(0x5D95D8C7)
-I (..\task\inc\task_config.h)(0x5D9858C0)
+I (..\task\inc\debug.h)(0x5DC2ED24)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
@@ -664,18 +664,18 @@ I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
-I (..\task\inc\task_manager.h)(0x5D9A0B35)
+I (..\task\inc\task_manager.h)(0x5DB70A8D)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
-I (..\task\inc\task_list.h)(0x5D9961A2)
-I (..\task\inc\timer_list.h)(0x5D996802)
-F (..\task\src\task_manager.c)(0x5D9B3EC7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/task_manager.o -MD)
+I (..\task\inc\task_list.h)(0x5DB99B7A)
+I (..\task\inc\timer_list.h)(0x5DCC23D3)
+F (..\task\src\task_manager.c)(0x5EA433E6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/task_manager.o -MD)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
-I (..\task\inc\task_manager.h)(0x5D9A0B35)
+I (..\task\inc\task_manager.h)(0x5DB70A8D)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
-I (..\task\inc\task_config.h)(0x5D9858C0)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
@@ -683,15 +683,15 @@ I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\cmsis_armcc_V6.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
-I (..\task\inc\timer_list.h)(0x5D996802)
-I (..\task\inc\task_list.h)(0x5D9961A2)
-I (..\task\inc\terminal.h)(0x5D9A93F7)
-F (..\task\src\task_list.c)(0x5D9B3DA8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/task_list.o -MD)
+I (..\task\inc\timer_list.h)(0x5DCC23D3)
+I (..\task\inc\task_list.h)(0x5DB99B7A)
+I (..\task\inc\terminal.h)(0x5EDC5A07)
+F (..\task\src\task_list.c)(0x5DC2EC5E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/task_list.o -MD)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
-I (..\task\inc\task_list.h)(0x5D9961A2)
+I (..\task\inc\task_list.h)(0x5DB99B7A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
-I (..\task\inc\task_config.h)(0x5D9858C0)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
@@ -699,16 +699,16 @@ I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\cmsis_armcc_V6.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
-I (..\task\inc\debug.h)(0x5D95D8C7)
+I (..\task\inc\debug.h)(0x5DC2ED24)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
-I (..\task\inc\task_manager.h)(0x5D9A0B35)
-F (..\task\src\timer_list.c)(0x5D9B3E37)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/timer_list.o -MD)
+I (..\task\inc\task_manager.h)(0x5DB70A8D)
+F (..\task\src\timer_list.c)(0x5DC5754F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/timer_list.o -MD)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
-I (..\task\inc\timer_list.h)(0x5D996802)
+I (..\task\inc\timer_list.h)(0x5DCC23D3)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
-I (..\task\inc\task_config.h)(0x5D9858C0)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
@@ -717,20 +717,19 @@ I (..\Drivers\CMSIS\Include\cmsis_armcc_V6.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
 I (..\intermediate\inc\intermediate_time.h)(0x5D6A2A89)
-I (..\task\inc\task_manager.h)(0x5D9A0B35)
-I (..\task\inc\debug.h)(0x5D95D8C7)
+I (..\task\inc\task_manager.h)(0x5DB70A8D)
+I (..\task\inc\debug.h)(0x5DC2ED24)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
-F (..\task\src\terminal.c)(0x5D9A940A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/terminal.o -MD)
+F (..\task\src\terminal.c)(0x5EDC61FD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/terminal.o -MD)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
-I (..\task\inc\terminal.h)(0x5D9A93F7)
+I (..\task\inc\terminal.h)(0x5EDC5A07)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
-I (..\intermediate\inc\intermediate_uart.h)(0x5D922754)
+I (..\task\inc\debug.h)(0x5DC2ED24)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
 I (..\app\inc\sys_config.h)(0x5D9A00EF)
-I (..\task\inc\debug.h)(0x5D95D8C7)
-I (..\task\inc\task_config.h)(0x5D9858C0)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5D2A6ECC)
@@ -738,4 +737,20 @@ I (..\Drivers\CMSIS\Include\cmsis_armcc_V6.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
 I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)
-F (..\task\inc\task_config.h)(0x5D9858C0)()
+F (..\task\inc\task_config.h)(0x5DC2EC5E)()
+F (..\task\src\list.c)(0x5EBC0953)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../app/inc -I ../intermediate/inc -I ../task/inc-I./RTE/_CubeMX-I"D:/Program Files (x86)/MDK/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include"-I"D:/Program Files (x86)/MDK/ARM/CMSIS/Include"-D__UVISION_VERSION="527" -DSTM32F10X_HD -DSTM32F103xE -DSTM32F103xE -DUSE_HAL_DRIVER-o cubemx/list.o -MD)
+I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
+I (..\task\inc\list.h)(0x5EBC08E5)
+I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdbool.h)(0x5C40E42A)
+I (..\app\inc\sys_config.h)(0x5D9A00EF)
+I (..\task\inc\debug.h)(0x5DC2ED24)
+I (..\task\inc\task_config.h)(0x5DC2EC5E)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x5D2A6ECB)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5D2A6ECC)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5D2A6ECC)
+I (..\Drivers\CMSIS\Include\cmsis_armcc_V6.h)(0x5D2A6ECC)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5D2A6ECC)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x5D2A6ECB)
+I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
+I (D:\Program Files (x86)\MDK\ARM\ARMCLANG\include\stdlib.h)(0x5C40E42A)

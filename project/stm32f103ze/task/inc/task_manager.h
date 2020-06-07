@@ -6,7 +6,7 @@
 #include <string.h>
 #include "task_config.h"
 
-#define TASK_QUEUE_MAX_SIZE		32
+#define TASK_QUEUE_MAX_SIZE		TASK_QUEUE_SIZE
 #define TASK_TYPE_TIMER			1
 #define TASK_TYPE_TASK			2
 

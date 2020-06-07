@@ -24,40 +24,42 @@ volatile uint8_t critical_nesting = 0;	//临界区变量
 static bool manager_deque(Queue_element_t *pTask);
 static void manager_queue_init(void);
 
-/*********************************************************/
-//name: manager_init
-//function: 任务管理器初始化
-//input: none
-//output: none
-//return: none
-/*********************************************************/
+/*********************************************************
+* Name		: manager_init
+* Function	: 任务管理器初始化
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: None 
+*********************************************************/
 void manager_init(void)
 {
 	timer_list_init();
 	task_list_init();
-	terminal_init();
+
 }
 
-/*********************************************************/
-//name: manager_queue_init
-//function: 任务队列初始化
-//input: none
-//output: none
-//return: none
-/*********************************************************/
+/*********************************************************
+* Name		: manager_queue_init
+* Function	: 任务队列初始化
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: 该函数设计为在中断中执行的函数 
+*********************************************************/
 static void manager_queue_init(void)
 {
 	memset((uint8_t *)&stQueue, 0, sizeof(Task_queue_t));
 }
 
-/*********************************************************/
-//name: manager_enque_isr
-//function: 任务入队列，在中断中使用
-//input: Queue_element_t *pTask		任务信息指针
-//output: None
-//return: true  入队列成功   false入队列失败
-//note: 该函数设计为在中断中执行的函数
-/*********************************************************/
+/*********************************************************
+* Name		: manager_enque_isr
+* Function	: 任务入队列，在中断中使用
+* Input		: Queue_element_t *pTask		任务信息指针
+* Output	: None
+* Return	: true  入队列成功   false入队列失败
+* Note		: 该函数设计为在中断中执行的函数 
+*********************************************************/
 bool manager_enque_isr(Queue_element_t *pTask)
 {
 	uint8_t byNewRear = (stQueue.byRear + 1) % TASK_QUEUE_MAX_SIZE;
@@ -75,14 +77,14 @@ bool manager_enque_isr(Queue_element_t *pTask)
 	return true;
 }
 
-/*********************************************************/
-//name: manager_deque
-//function: 任务出队列
-//input: None
-//output: Queue_element_t *pTask 队列任务指针
-//return: true 出队成功   false 出队失败
-//note: None
-/*********************************************************/
+/*********************************************************
+* Name		: manager_deque
+* Function	: 任务出队列
+* Input		: Queue_element_t *pTask 队列任务指针
+* Output	: None
+* Return	: true 出队成功   false 出队失败
+* Note		: None 
+*********************************************************/
 static bool manager_deque(Queue_element_t *pTask)
 {
 	if(stQueue.byRear == stQueue.byFront)
@@ -99,15 +101,14 @@ static bool manager_deque(Queue_element_t *pTask)
 	return true;
 }
 
-
-/*********************************************************/
-//name: manager_scan
-//function: 任务入队列，在后台使用,将队列中的任务添加至对应的链表中
-//input: None
-//output: None
-//return: None
-//note: 需要在主循环中运行
-/*********************************************************/
+/*********************************************************
+* Name		: manager_scan
+* Function	: 任务入队列，在后台使用,将队列中的任务添加至对应的链表中
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: 需要在主循环中运行 
+*********************************************************/
 void manager_scan(void)
 {
 	Queue_element_t que_task;
@@ -128,34 +129,33 @@ void manager_scan(void)
 			pTask.CallBack = que_task.func;
 			pTask.byPriority = que_task.byPriority;
 			pTask.byID = que_task.byID;
-			task_list_push(&pTask);
+			task_list_push(&pTask, true);
 		}
 	}
 }
 
-
-/*********************************************************/
-//name: task_enter_critical
-//function: 进入临界段
-//input: None
-//output: None
-//return: None
-//note: 与task_exit_critical()函数成对使用 
-/*********************************************************/
+/*********************************************************
+* Name		: task_enter_critical
+* Function	: 进入临界段
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: 与task_exit_critical()函数成对使用  
+*********************************************************/
 void task_enter_critical(void)
 {
 	DISABLE_INT();
 	critical_nesting++;
 }
 
-/*********************************************************/
-//name: task_exit_critical
-//function: 退出临界段
-//input: None
-//output: None
-//return: None
-//note: 与task_enter_critical()函数成对使用 
-/*********************************************************/
+/*********************************************************
+* Name		: task_exit_critical
+* Function	: 退出临界段
+* Input		: None
+* Output	: None
+* Return	: None
+* Note		: 与task_enter_critical()函数成对使用 
+*********************************************************/
 void task_exit_critical(void)
 {
 	critical_nesting--;
